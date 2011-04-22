@@ -1,0 +1,24 @@
+Necessaria
+(or mod.rt.js in Eisa)
+
+Necessaria(la. unavoidable) is a module loading system, designed for web scripting, and Module/Wrappings compatible.
+
+USage
+-----------------
+
+Declaring a module:
+
+	// in mod.js
+	NECESSARIA_module.declare([dependents], function(require, exports){
+		var dependent = require('dependent');
+
+		exports.f = function(){...}
+	});
+
+Using modules:
+	
+	// in somewhere using mod.js
+	NECESSARIA_module.provide(['mod'], function(require){
+		var mod = require('mod');
+		mod.f()
+	});

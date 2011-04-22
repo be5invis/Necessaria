@@ -1,0 +1,10 @@
+*.swp
+*.swn
+*.swo
+*~
+gen/*
+smp/*
+~*
+*.lf.js
+doc/*.html
+.vim/
